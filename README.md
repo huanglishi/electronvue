@@ -1,4 +1,4 @@
-# electron9.3.3+vue-cli3+sqlist开发电脑端桌面应用
+# electron+vue-cli3+sqlist开发电脑端桌面应用
 安装说明：
 #### 1.首先使用vue-cli创建项目
 选取一个项目存放的路径，然后开始创建项目 例如：
@@ -119,6 +119,20 @@ module.exports = {
   }
 }
 ```
+数据文件路径问题
+```json
+const path = require('path')
+const webpack = require('webpack')
+module.exports = {
+ configureWebpack: {
+        plugins:[
+            new webpack.DefinePlugin({
+                __resources: `"${path.join(__dirname, './resources').replace(/\\/g, '\\\\')}"`,
+            }),
+        ]
+    }
+}
+```
 #### 6.打包问题
 ###### 如果打包无法下载依赖包：本利使用electron9.3.3讲解
 
@@ -134,7 +148,6 @@ module.exports = {
 ###### 6.2其他路径问题
 
 ------------
-
 
 1.C:\Users\*****\AppData\Local\electron-builder\cache\winCodeSign
 
