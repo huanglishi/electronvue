@@ -101,3 +101,31 @@ Failed to fetch extension, trying 1 more times
       console.error('Vue Devtools failed to install:', e.toString())
     }
   ```
+#### 5.安装sqlit3本地数据库
+```
+npm install sqlite3 --save
+#如果下不来请用淘宝
+cnpm install sqlite3 --save
+#如果还不行，请用下面命令多刷几次
+npm cache clear -force
+```
+注意：vue.config.js必须配置 nodeIntegration: true；如下：
+```
+module.exports = {
+  pluginOptions: {
+    electronBuilder: {
+      nodeIntegration: true
+    }
+  }
+}
+```
+#### 6.打包问题
+###### 如果打包无法下载依赖包：本利使用electron9.3.3讲解
+
+问题： 包下载出错的包：如electron-v9.3.3-win32-x64.zip用其他方式手动下载放到下面路径的位置 C:\Users\*****\AppData\Local\electron\Cache 根据提示同理下载其他包 需要注意的是，不仅要下载这个压缩包，还要把对应的SHASUMS256.txt-文件也下载下来放进去； 
+请到这里去找对应的版本下载地址：https://npm.taobao.org/mirrors/electron 这个是国内阿里管理的包
+###### 6.1下载包
+1. electron-v9.3.3-win32-x64.zip [下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-x64.zip "下载地址") 
+2.electron-v9.3.3-win32-ia32.zip[下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-ia32.zip "下载地址")
+###### 6.2其他路径问题
+1.C:\Users\*****\AppData\Local\electron-builder\cache\winCodeSign 2.C:\Users\***\AppData\Local\electron-builder\cache\winCodeSign\winCodeSign-2.4.0\winCodeSign
