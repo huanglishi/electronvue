@@ -120,7 +120,7 @@ module.exports = {
 }
 ```
 数据文件路径问题
-```json
+```
 const path = require('path')
 const webpack = require('webpack')
 module.exports = {
