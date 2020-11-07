@@ -1,4 +1,4 @@
-# electron+vue-cli3+sqlist开发电脑端桌面应用
+# electron9.3.3+vue-cli3+sqlist开发电脑端桌面应用
 安装说明：
 #### 1.首先使用vue-cli创建项目
 选取一个项目存放的路径，然后开始创建项目 例如：
@@ -109,7 +109,7 @@ cnpm install sqlite3 --save
 #如果还不行，请用下面命令多刷几次
 npm cache clear -force
 ```
-注意：vue.config.js必须配置 nodeIntegration: true；如下：
+注意：需要在fs或sqlite渲染器过程中使用本机模块，vue.config.js必须配置 nodeIntegration: true；如下：
 ```
 module.exports = {
   pluginOptions: {
