@@ -159,6 +159,10 @@ module.exports = {
 ```
 
 #### 6.打包问题
+```
+#打包命令
+npm run electron:build
+```
 ###### 如果打包无法下载依赖包：本利使用electron9.3.3讲解
 
 问题： 包下载出错的包：如electron-v9.3.3-win32-x64.zip用其他方式手动下载放到下面路径的位置 C:\Users\*****\AppData\Local\electron\Cache 根据提示同理下载其他包 需要注意的是，不仅要下载这个压缩包，还要把对应的SHASUMS256.txt-文件也下载下来放进去； 
@@ -166,8 +170,7 @@ module.exports = {
 ###### 6.1下载包
 
 ------------
-
-1. electron-v9.3.3-win32-x64.zip [下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-x64.zip "下载地址") 
+1.electron-v9.3.3-win32-x64.zip [下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-x64.zip "下载地址")
 
 2.electron-v9.3.3-win32-ia32.zip[下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-ia32.zip "下载地址")
 ###### 6.2其他路径问题
@@ -177,3 +180,10 @@ module.exports = {
 1.C:\Users\*****\AppData\Local\electron-builder\cache\winCodeSign
 
 2.C:\Users\***\AppData\Local\electron-builder\cache\winCodeSign\winCodeSign-2.4.0\winCodeSign
+
+打包配置 vue.config.js完整内容 [请前往查看](https://github.com/huanglishi/electronvue/blob/main/vue.config.js "请前往查看")
+### 在您方便时候也可以在右上角给我点一下 `⭐ Star` 鼓励一下~哦
+###  开发过程又是什么问题可加 QQ:[504500934](https://ynjiyuan.com "504500934") 进行交流
+## 如果可以帮助您，您也可以赞助一下喝杯茶
+
+![Pandao editor.md](https://honey.ynjiyuan.com/wxpayqrcode.png "Pandao editor.md")
