@@ -133,6 +133,31 @@ module.exports = {
     }
 }
 ```
+使用sqlit小样
+```
+   var sqlite3 = require('sqlite3').verbose();
+   console.log("sqlite3测试：",sqlite3)
+      const path = require("path");
+      let _that = this;
+       let lsrc=path.join(__resources, "/data/local.db")
+      console.log("路径：",lsrc)
+      // let ruing=path.join(remote.app.getPath('userData'), '/data.db');
+     const db = new sqlite3.Database(lsrc);
+      db.run("create table test( id INTEGER PRIMARY KEY AUTOINCREMENT,name varchar(15))", function() {
+      let addname="测名称：";
+      db.run('insert into test (name) values("'+addname+'")', function() {
+        db.all("select * from test order by id desc limit 8 ", function(err, res) {
+          if (!err) {
+            _that.list=res
+            console.log(JSON.stringify(res));
+          } else {
+            console.log(err);
+          }
+        });
+      });
+    });
+```
+
 #### 6.打包问题
 ###### 如果打包无法下载依赖包：本利使用electron9.3.3讲解
 
