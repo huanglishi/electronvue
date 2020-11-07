@@ -125,7 +125,17 @@ module.exports = {
 问题： 包下载出错的包：如electron-v9.3.3-win32-x64.zip用其他方式手动下载放到下面路径的位置 C:\Users\*****\AppData\Local\electron\Cache 根据提示同理下载其他包 需要注意的是，不仅要下载这个压缩包，还要把对应的SHASUMS256.txt-文件也下载下来放进去； 
 请到这里去找对应的版本下载地址：https://npm.taobao.org/mirrors/electron 这个是国内阿里管理的包
 ###### 6.1下载包
+
+------------
+
 1. electron-v9.3.3-win32-x64.zip [下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-x64.zip "下载地址") 
+
 2.electron-v9.3.3-win32-ia32.zip[下载地址](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-ia32.zip "下载地址")
 ###### 6.2其他路径问题
-1.C:\Users\*****\AppData\Local\electron-builder\cache\winCodeSign 2.C:\Users\***\AppData\Local\electron-builder\cache\winCodeSign\winCodeSign-2.4.0\winCodeSign
+
+------------
+
+
+1.C:\Users\*****\AppData\Local\electron-builder\cache\winCodeSign
+
+2.C:\Users\***\AppData\Local\electron-builder\cache\winCodeSign\winCodeSign-2.4.0\winCodeSign
