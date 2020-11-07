@@ -48,29 +48,12 @@ in production) (Y/n)  n
 ```
 ? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported 
 by default): (Use arrow keys)
-  Sass/SCSS (with dart-sass) 
+ ❯ Sass/SCSS (with dart-sass) 
   Sass/SCSS (with node-sass) 
   Less 
   Stylus 
 ```
-这里是设置css预处理模块，在这里我要强调一下，不需要乱选，选择我们熟悉的一种，在这里我们选择 Stylus ，然后进入下一步
-```
-
-? Pick a linter / formatter config: (Use arrow keys)
-  ESLint with error prevention only 
-  ESLint + Airbnb config 
-  ESLint + Standard config 
-  ESLint + Prettier 
-```
-这一步是选择ESLint代码检查工具的配置，这里我们选择标准配置“ESLint + Standard config”，然后进入下一步
-
-```
-? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i
- to invert selection)
- ◉ Lint on save
- ◯ Lint and fix on commit
-```
-这一步是选择什么时候执行ESLint检查，这里我们选择保存时检查“Lint on save”,然后进入下一步
+这里是设置css预处理模块，在这里我要强调一下，不需要乱选，选择我们熟悉的一种，在这里我们选择 Sass/SCSS，然后进入下一步
 
 ```
 ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? 
