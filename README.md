@@ -190,5 +190,5 @@ npm run electron:build
 ### 在您方便时候也可以在右上角给我点一下 `⭐ Star` 鼓励一下~哦
 ###  开发过程又是什么问题可加 QQ:[504500934](https://ynjiyuan.com "504500934") 进行交流
 ## 如果可以帮助您，您也可以赞助一下喝杯茶
-赞助地址：[赞助一下喝杯茶](https://npm.taobao.org/mirrors/electron/9.3.3/electron-v9.3.3-win32-ia32.zip "赞助一下喝杯茶")
+赞助地址：[赞助一下喝杯茶](https://honey.ynjiyuan.com/wxpayqrcode.png "赞助一下喝杯茶")
 ![Pandao editor.md](https://honey.ynjiyuan.com/wxpayqrcode.png "Pandao editor.md")
